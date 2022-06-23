@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #ddd9d9; }
+  body div header nav div .navbar-brand img {
+    width: 250px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block; }
+  body div header nav div ul li a:hover {
+    font-size: 20px; }
+  body div h1:hover {
+    color: #6e1111; }
+  body div h1 {
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline; }
+  body div .subTitulo {
+    padding: .5rem;
+    text-align: center;
+    color: #867e7e;
+    font-size: 20px; }
+  body div .mainNosotros {
+    height: 140vh;
+    display: grid;
+    grid-template-areas: "mainP mainP" "imagenUno imagenDos" "imagenTres imagenCuatro" "parrafo parrafo";
+    justify-content: center;
+    justify-items: center;
+    gap: 2.2rem; }
+  body div main .sectionNosotros .svg {
+    display: none; }
+  body div main .contenidoPresupuesto {
+    grid-area: contenidoPresupuesto; }
+  body div main span {
+    color: #6e1111; }
+  body div main .imagenUno {
+    grid-area: imagenUno; }
+  body div main .imagenDos {
+    grid-area: imagenDos; }
+  body div main .imagenTres {
+    grid-area: imagenTres; }
+  body div main .imagenCuatro {
+    grid-area: imagenCuatro; }
+  body div main .parrafo {
+    grid-area: parrafo;
+    font-size: 1.2rem; }
+  body div main img {
+    width: 70%; }
+  body div main .imgUno {
+    border-radius: 2rem; }
+  body div main .imgDos {
+    border-radius: 2rem; }
+  body div main .imgTres {
+    border-radius: 2rem; }
+  body div main .imgCuatro {
+    border-radius: 2rem; }
+  @media screen and (min-width: 1024px) {
+    body div nav {
+      margin: 1rem; }
+    body div .mainNosotros {
+      grid-template-areas: "mainP mainP img img" "imagenUno imagenDos    imagenTres imagenCuatro" "parrafo parrafo parrafo    parrafo";
+      column-gap: 2rem;
+      align-items: center; } }
+  body div footer p {
+    text-align: left; }

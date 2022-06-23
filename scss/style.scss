@@ -1,0 +1,150 @@
+$color-fondo-sitio: rgb(221, 217, 217);
+$color-fondo-nav: rgb(110, 17, 17);
+$color-btn: rgb(134, 126, 126);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: $color-fondo-sitio;
+    div{
+        header{
+            nav{
+                div{
+                    .navbar-brand{
+                        img{
+                            width: 250px;
+                            height: auto;
+                            margin: 0;
+                            padding: 0;
+                            display: block;
+                        }
+                    }
+
+                    ul{
+                        li{
+                            a:hover{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        h1:hover{
+            color: $color-fondo-nav;
+        }
+
+        h1{
+            padding: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .subTitulo{
+            padding: .5rem;
+            text-align: center;
+            color: $color-btn;
+            font-size: 20px;
+        }
+        
+
+        .mainNosotros{
+            height: 140vh;
+            display: grid;
+            grid-template-areas:"mainP mainP"
+                                "imagenUno imagenDos"
+                                "imagenTres imagenCuatro"
+                                "parrafo parrafo";
+            justify-content: center;
+            justify-items: center;
+            gap: 2.2rem;
+        }
+        main{
+            .sectionNosotros{
+                .svg{
+                    display: none;
+                }
+            }
+
+            .contenidoPresupuesto{
+                grid-area: contenidoPresupuesto;
+            }
+
+            span{
+                color: $color-fondo-nav;
+            }
+
+            .imagenUno{
+                grid-area: imagenUno;
+            }
+
+            .imagenDos{
+                grid-area: imagenDos;
+            }
+
+            .imagenTres{
+                grid-area: imagenTres;
+            }
+
+            .imagenCuatro{
+                grid-area: imagenCuatro;
+            }
+
+            .parrafo{
+                grid-area: parrafo;
+                font-size: 1.2rem;
+            }
+
+            img{
+                width: 70%;
+            }
+
+            .imgUno{
+                border-radius: 2rem;
+            }
+
+            .imgDos{
+                border-radius: 2rem;
+            }
+
+            .imgTres{
+                border-radius: 2rem;
+            }
+
+            .imgCuatro{
+                border-radius: 2rem;
+            }
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            nav{
+                margin: 1rem;
+            }
+
+            .mainNosotros{
+                grid-template-areas:"mainP mainP img img"
+                                    "imagenUno imagenDos    imagenTres imagenCuatro"
+                                    "parrafo parrafo parrafo    parrafo";
+                column-gap: 2rem;
+                align-items: center;
+            }
+        }
+        
+
+        footer{
+            p{
+                text-align: left;
+            }
+        }
+    }
+}
+
